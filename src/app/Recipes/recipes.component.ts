@@ -11,16 +11,10 @@ import { NgOptimizedImage } from '@angular/common';
 })
 export class RecipesComponent implements OnInit {
     recipes:Recipe[];
-    selectedRecipe:Recipe;  
 
     constructor(private recipeService:RecipeService){}
 
     ngOnInit(){
-      this.recipeService.recipeSelected.subscribe(
-        (recipe:Recipe) => {
-          this.selectedRecipe = recipe; 
-        }
-      )
     }
 
 

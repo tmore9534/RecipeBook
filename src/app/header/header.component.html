@@ -11,8 +11,9 @@
 
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#" (click)="onSelect('recipe')">Receipes</a></li>
-        <li class="nav-item"><a class="nav-link" href="#" (click)="onSelect('shopping-list')">Shopping List</a></li>
+        <li RouterLinkActive="active" class="nav-item"><a class="nav-link" routerLink="/recipes">Receipes</a></li>
+        <li RouterLinkActive="active" class="nav-item"><a class="nav-link" routerLink="/shopping-list">Shopping List</a>
+        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right ml-auto">
         <li class="nav-item dropdown">
@@ -20,10 +21,10 @@
             aria-expanded="false">
             Manage <span class="caret"></span></a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Save Data</a>
-            <a class="dropdown-item" href="#">Fetch Data</a>
+            <a class="dropdown-item" style="cursor:pointer">Save Data</a>
+            <a class="dropdown-item" style="cursor:pointer">Fetch Data</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item">Something else here</a>
           </div>
         </li>
       </ul>

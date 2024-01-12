@@ -10,6 +10,8 @@ import { RecipeListComponent } from './Recipes/recipe-list/recipe-list.component
 import { RecipeItemComponent } from './Recipes/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+import { AppRoutingModule } from './app.routing';
+import { RecipesStartComponent } from './Recipes/recipes-start/recipes-start.component';
 
 
 @NgModule({
@@ -22,10 +24,12 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
+    RecipesStartComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
