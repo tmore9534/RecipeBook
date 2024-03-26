@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Recipe } from './recipe.model';
+import { DataStoreService } from 'src/shared/datastore.service';
 
 @Component({
   selector: 'app-recipes',
@@ -12,6 +13,7 @@ export class RecipesComponent implements OnInit {
     constructor(){}
 
     ngOnInit(){
+      
     }
 
 

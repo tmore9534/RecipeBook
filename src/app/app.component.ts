@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+import { Component, OnInit } from '@angular/core';
+import { AuthService } from './Auth/auth.service';
 
 
 @Component({
@@ -7,7 +7,13 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'CoursePractice';
 
+  constructor(private authService:AuthService){}
+
+  ngOnInit(){
+    this.authService.autoLogIn();
+  }
+  
 }
