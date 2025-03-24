@@ -1,2 +1,2 @@
 # RecipeBook
-Recipe Book ( Angular Project)
+Recipe Book - Angular and TypeScript
